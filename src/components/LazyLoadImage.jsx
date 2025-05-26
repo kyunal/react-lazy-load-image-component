@@ -99,7 +99,7 @@ class LazyLoadImage extends React.Component {
 
 		const loadedClassName = loaded ? ' lazy-load-image-loaded' : '';
 		const wrapperBackground =
-			loaded || !placeholderSrc
+			!placeholderSrc
 				? {}
 				: {
 					backgroundImage: `url(${placeholderSrc})`,
@@ -164,7 +164,7 @@ LazyLoadImage.propTypes = {
 };
 
 LazyLoadImage.defaultProps = {
-	onLoad: () => {},
+	onLoad: () => { },
 	afterLoad: () => ({}), // Deprecated, use onLoad instead
 	beforeLoad: () => ({}),
 	delayMethod: 'throttle',
