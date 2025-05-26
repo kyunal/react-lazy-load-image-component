@@ -106,6 +106,8 @@ class LazyLoadImage extends React.Component {
 					backgroundSize: '100% 100%',
 				};
 
+		const wrapperStyle = !!wrapperProps && "style" in wrapperProps ? wrapperProps.style : {};
+
 		return (
 			<span
 				className={
@@ -120,6 +122,7 @@ class LazyLoadImage extends React.Component {
 					display: 'inline-block',
 					height: height,
 					width: width,
+					...wrapperStyle
 				}}
 				{...wrapperProps}
 			>
