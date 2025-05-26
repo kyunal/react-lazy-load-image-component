@@ -39,6 +39,7 @@
 		"start": "webpack --watch",
 		"build": "webpack",
 		"prepare": "webpack",
+		"prepack": "webpack",
 		"prettier": "prettier --write \"**/*.{js,jsx,json}\"",
 		"lint": "eslint src --ext=js,jsx"
 	},
