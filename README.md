@@ -5,6 +5,8 @@
 React Lazy Load Image Component
 ===============================
 
+## Forked from [https://github.com/Aljullu/react-lazy-load-image-component](https://github.com/Aljullu/react-lazy-load-image-component)
+
 React Component to lazy load images and other components/elements. Supports IntersectionObserver and includes a HOC to track window scroll position to improve performance.
 
 "[_An easy-to-use performant solution to lazy load images in React_](https://medium.com/@albertjuhe/an-easy-to-use-performant-solution-to-lazy-load-images-in-react-e6752071020c)"
