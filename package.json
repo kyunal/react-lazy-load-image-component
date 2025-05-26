@@ -1,5 +1,5 @@
 {
-	"name": "react-lazy-load-image-component",
+	"name": "@kyunal/react-lazy-load-image-component",
 	"version": "1.6.2",
 	"description": "React Component to lazy load images using a HOC to track window scroll position.",
 	"main": "build/index.js",
@@ -38,8 +38,6 @@
 		"test": "jest",
 		"start": "webpack --watch",
 		"build": "webpack",
-		"prepare": "webpack",
-		"prepack": "webpack",
 		"prettier": "prettier --write \"**/*.{js,jsx,json}\"",
 		"lint": "eslint src --ext=js,jsx"
 	},
