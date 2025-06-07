@@ -138,10 +138,11 @@ class LazyLoadImage extends React.Component {
 			visibleByDefault,
 			wrapperClassName,
 			wrapperProps,
+			alwaysWrap
 		} = this.props;
 
 		const lazyLoadImage = this.getLazyLoadImage();
-		const needsWrapper = (effect || placeholderSrc) && !visibleByDefault;
+		const needsWrapper = alwaysWrap || ((effect || placeholderSrc) && !visibleByDefault);
 
 		if (!needsWrapper && !wrapperClassName && !wrapperProps) {
 			return lazyLoadImage;
@@ -164,6 +165,7 @@ LazyLoadImage.propTypes = {
 	visibleByDefault: PropTypes.bool,
 	wrapperClassName: PropTypes.string,
 	wrapperProps: PropTypes.object,
+	alwaysWrap: PropTypes.bool
 };
 
 LazyLoadImage.defaultProps = {
@@ -178,6 +180,7 @@ LazyLoadImage.defaultProps = {
 	useIntersectionObserver: true,
 	visibleByDefault: false,
 	wrapperClassName: '',
+	alwaysWrap: false
 };
 
 export default LazyLoadImage;
